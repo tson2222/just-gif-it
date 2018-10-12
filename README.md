@@ -7,3 +7,4 @@ Backend: Spring Boot + JavaCV + Animated-Gif-Lib
 ## License
 Version 2.0 of the Apache License
 "# just-gif-it" 
+"# just-gif-it" 
