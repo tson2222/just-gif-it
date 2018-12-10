@@ -49,7 +49,7 @@ public class Tester {
 
     }
 
-    public static void digits(long digits) {
+    public static void digits(long digitss) {
         int count = 0;
 
         while (digits > 0) {
