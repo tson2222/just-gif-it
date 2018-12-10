@@ -59,7 +59,7 @@ public class Tester {
             ++count;
         }
 
-        System.out.println("Number of dawaddigits: " + count);
+        System.out.println("Number of dawadldigits: " + count);
 
     }
 }
