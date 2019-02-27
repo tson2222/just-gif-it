@@ -45,7 +45,7 @@ public class Tester {
             ++count;
         }
 
-        System.out.println("Number of diggits: " + count);
+        System.out.println("Numbers of diggits: " + count);
 
     }
 
