@@ -31,7 +31,7 @@ public class Tester2 {
             System.out.println(i + ": " + count.apply(i));
         }
 
-        String[] x = {"Hello","Hase","Helmut","Gans","Test","Alphabet"};
+        String[] x = {"Hello","Hase","Helmut","Gans","dvdv","Alphabet"};
         Arrays.stream(x).filter(o->o.contains("a")).filter(o->o.contains("e")).forEach(System.out::println);
         ArrayList<String> ar = new ArrayList<>();
         ar.add("13");
@@ -50,7 +50,12 @@ public class Tester2 {
         }
          return false;
      }
-    static final UnaryOperator<Integer> count = x -> x  == 0
-            ? 0
-            : x + Tester2.count.apply(x - 1);
+    static final UnaryOperator<Integer> count = new UnaryOperator<Integer>() {
+        @Override
+        public Integer apply(Integer x) {
+            return x == 0
+                    ? 0
+                    : x + Tester2.count.apply(x - 1);
+        }
+    };
 }

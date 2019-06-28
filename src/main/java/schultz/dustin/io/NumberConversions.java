@@ -1,12 +1,11 @@
 package schultz.dustin.io;
 
-public class Tester {
+public class NumberConversions {
 
     public static void main(String[] args) {
         int a = 60;
         int b = -60;
-        int c = 0;
-        Integer integer = new Integer(a);
+        int c;
         System.out.println("Byte Value of a: " + Integer.toString(a,16));
         digits(9223372036854775807L);
         System.out.println("Int 6 / 10 =" + 9 / 10);
@@ -30,8 +29,9 @@ public class Tester {
 
         int hex = 0x14;
         int dezi = 20;
-        if (hex == dezi)
+        if (hex == dezi) {
             System.out.println("Hex and Deci have the same number value");
+        }
 
     }
 
@@ -45,7 +45,7 @@ public class Tester {
             ++count;
         }
 
-        System.out.println("Numbers of diggits: " + count);
+        System.out.println("Numbers of digits: " + count);
 
     }
 
@@ -59,7 +59,7 @@ public class Tester {
             ++count;
         }
 
-        System.out.println("Number of dawadldigits: " + count);
+        System.out.println("Number of digits: " + count);
 
     }
 }

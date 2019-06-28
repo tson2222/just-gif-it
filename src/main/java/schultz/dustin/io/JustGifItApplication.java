@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -11,6 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import javax.annotation.PostConstruct;
 import java.io.File;
 
+@EnableScheduling
 @SpringBootApplication
 public class JustGifItApplication {
 
@@ -23,6 +25,7 @@ public class JustGifItApplication {
 
     @PostConstruct
     private void init() {
+        System.out.println("post contruct method invoked");
         File gifFolder = new File(gifLocation);
         if (!gifFolder.exists()) {
             gifFolder.mkdir();
