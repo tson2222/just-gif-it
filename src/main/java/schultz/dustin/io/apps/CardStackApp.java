@@ -1,6 +1,7 @@
 package schultz.dustin.io.apps;
 
-import ds.BasicStack;
+
+import schultz.dustin.io.ds.BasicStack;
 
 public class CardStackApp {
 	BasicStack<String> stack = new BasicStack<String>();

@@ -1,6 +1,8 @@
-package apps;
+package schultz.dustin.io.apps;
 
-import ds.BasicBinaryTree;
+
+
+import schultz.dustin.io.ds.BasicBinaryTree;
 
 public class ContactManagerApp {
 	BasicBinaryTree<Contact> contacts = new BasicBinaryTree<Contact>();

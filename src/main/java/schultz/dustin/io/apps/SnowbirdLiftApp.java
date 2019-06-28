@@ -1,6 +1,8 @@
-package apps;
+package schultz.dustin.io.apps;
 
-import ds.BasicQueue;
+
+
+import schultz.dustin.io.ds.BasicQueue;
 
 public class SnowbirdLiftApp {
 	BasicQueue<Gad2Chair> gad2Lift = new BasicQueue<Gad2Chair>();

@@ -1,6 +1,6 @@
-package apps;
+package schultz.dustin.io.apps;
 
-import ds.BasicLinkedList;
+import schultz.dustin.io.ds.BasicLinkedList;
 
 public class TrainLinkedListApp {
 	BasicLinkedList<TrainCar> train = new BasicLinkedList<TrainCar>();

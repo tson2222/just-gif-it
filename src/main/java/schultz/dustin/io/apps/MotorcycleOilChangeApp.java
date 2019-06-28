@@ -1,6 +1,8 @@
-package apps;
+package schultz.dustin.io.apps;
 
-import ds.BasicHashTable;
+
+
+import schultz.dustin.io.ds.BasicHashTable;
 
 public class MotorcycleOilChangeApp {
 	//we will use a 12 piece socket set for this job
